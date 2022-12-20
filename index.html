@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- css   -->
     <link rel="stylesheet" href="/style.css">
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
@@ -41,14 +44,35 @@
 
      <div class="container">
         <form id="form-information" action="">
+            <center><h3 style="color: mediumaquamarine;">FORM</h3 style="color: mediumaquamarine;"></center>
+                <hr style="margin: 10px -15px;"; color="mediumaquamarine">
             <div class="form-group">
+                <!-- Username  -->
+                <div class="form">
+                    <label class="form-label" for="">Username</label> <br>
+                    <input class="username form-input" type="text" placeholder="Username"> <br>
+                    <p class="error-message err-username"></p>
+                </div>
 
-                    <span for="">Username</span> <br><br>
-                    <input class="username" type="text" placeholder="Username"> <br>
-                    <p class="error-message"></p> <br>
+                <!-- Email  -->
+                <div class="form">
+                    <label class="form-label" for="">Email</label> 
+                    <input class="email form-input" type="email" placeholder="Email"> 
+                    <p class="error-message err-email"></p>
+                </div>
+               
+                <!-- password  -->
+                 <div class="form">
+                     <label class="form-label" for="">Password</label> <br>
+                     <div class="form-pass">
+                         <input class="password form-input" type="password" placeholder="password"> 
+                         <i class="eye-password fa-regular fa-eye"></i>
+                     </div>
+                     <p class="error-message err-password"></p>
+                 </div>
 
+                 <!-- submit  -->
                     <input class="btn-submit" type="submit"  value="submit">
-              
             </div>
         </form>
      </div>

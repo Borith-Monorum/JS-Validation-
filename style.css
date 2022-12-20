@@ -13,31 +13,66 @@ font-family: sans-serif;
     justify-content:center;
 }
 .container #form-information{
-    background-color: honeydew;
+    background-color: aliceblue;
     padding: 15px;
     border-radius: 8px;
+    width: 70%;
+    border:1px solid #ddd;
 }
-.error-message{
-    margin-top: .5rem;
-    color:red;
-    font-size: 12px;
-    display: none;
+.form-group .form{
+    margin: 10px 0;
 }
-.container .form-group .username{
+.form-label{   
+    /* padding-top: 0px; */
+    font-size: .85rem;
+    color: #333;
+}
+.container .form-input{
+    width: 100%;
     padding: 5px 10px;
-    /* outline: none; */
+    margin:5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 12px;
+    outline:none ;
+}
+.error-message {
+    color:red;
+    font-size: 12px;
+    display: none;
+ 
+}
+.container .form-group .form-pass{
+    margin-top: 5px;
+    display:flex;
+    align-items:center;
+    background-color: white;
+    border-radius: 4px;
+    border:1px solid #ccc;
+
+   
+}
+.container .form-group .password{
+    margin: 0;
+    outline:none;
+    border:none;
+    width: 95%;
+    background:none;
+}
+.container .form-group i{
+    width: 5%;
+    font-size: 12px;
 }
 .container .form-group .btn-submit{
+margin-top: .7rem;
 padding: 5px 10px;
 color: #fff;
 background-color: cadetblue;
 border: none;
 border-radius: 5px;
-font-size: 12px;
+font-size: 14px;
 width: 100%;
 cursor:pointer;
+letter-spacing: 3px;
 }
 
